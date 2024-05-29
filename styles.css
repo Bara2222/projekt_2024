@@ -1,0 +1,26 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(212, 186, 153);
+}
+
+#board {
+    background-image: url("img/flappybirdbg.png");
+}
+h1{
+    font-size: 35px;
+    color: white;
+    background-color: grey;
+    width: 100%;   
+    text-align: center;
+    font-weight: bold;
+    line-height: 78px;
+    text-transform: capitalize;
+}
+
+footer{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
