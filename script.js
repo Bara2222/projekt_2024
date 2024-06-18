@@ -1,11 +1,11 @@
 
-//plocha
+//vytvoření plocha
 let board;
 let boardWidth = 540;
 let boardHeight = 820;
 let context;
 
-//ptáček
+//vytvoření ptáček
 let birdWidth = 34; 
 let birdHeight = 24;
 let birdX = boardWidth/8;
@@ -19,7 +19,7 @@ let bird = {
     height : birdHeight
 }
 
-//trubky
+// vytvoření trubek
 let pipeArray = [];
 let pipeWidth = 64; 
 let pipeHeight = 512;
@@ -97,7 +97,7 @@ function update() {
         pipeArray.shift(); 
     }
 
-    //skore
+    //načítání skore
     context.fillStyle = "white";
     context.font="45px sans-serif";
     context.fillText(score, 5, 45);
@@ -106,7 +106,7 @@ function update() {
         context.fillText("GAME OVER", 5, 90);
     }
 }
-
+//položení trubek
 function placePipes() {
     if (gameOver) {
         return;
